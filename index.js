@@ -13,3 +13,9 @@ function nameToAttributes(list) {
     return { firstName: driverFirst, lastName: driverLast}
   })
 }
+
+function attributesToPhrase(list) {
+  return list.map(function (driver) {
+    return `${driver.name} is from ${driver.hometown}`
+  })
+}
